@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types>
+    <type id="straight" priority="10" numLanes="3" speed="38.89" width="4.0"/>
+    <type id="arc"      priority="10" numLanes="3" speed="27.78"      width="4.0"/>
+</types>

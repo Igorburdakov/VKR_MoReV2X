@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <node id="n_out_nw" x="-150.0"  y="120.0"  type="priority"/>
+    <node id="n_out_ne" x="150.0" y="120.0"  type="priority"/>
+    <node id="n_out_se" x="150.0" y="-120.0" type="priority"/>
+    <node id="n_out_sw" x="-150.0"  y="-120.0" type="priority"/>
+    <node id="n_in_nw"  x="-150.0"  y="90.0"  type="priority"/>
+    <node id="n_in_ne"  x="150.0" y="90.0"  type="priority"/>
+    <node id="n_in_se"  x="150.0" y="-90.0" type="priority"/>
+    <node id="n_in_sw"  x="-150.0"  y="-90.0" type="priority"/>
+</nodes>
