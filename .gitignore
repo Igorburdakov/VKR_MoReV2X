@@ -2,8 +2,6 @@ results/
 runs/
 morev2x/build/
 morev2x/.lock-waf*
-morev2x/.waf-*/
-morev2x/.waf3-*/
 morev2x/c4che/
 morev2x/results/
 morev2x/test_logs/

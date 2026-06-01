@@ -21,9 +21,12 @@ EXPERIMENTS.md                        # описание набора экспе
 
 ```bash
 cd morev2x
-./waf configure
+./waf configure -d release
 ./waf build
 ```
+
+Профиль `release` (`-O3`, без отладочных символов) ускоряет сборку и симуляцию.
+Для отладки можно использовать `./waf configure -d debug`.
 
 Если сборка падает из-за зависимостей, обычно не хватает компилятора, Python headers или Boost:
 
