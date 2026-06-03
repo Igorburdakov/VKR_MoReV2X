@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+ALL_GROUPS="G1 G2 G3"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 MOREV2X_DIR="${REPO_DIR}/morev2x"
@@ -44,7 +45,7 @@ run() {
 }
 
 GROUPS=("$@")
-[[ ${#GROUPS[@]} -eq 0 ]] && GROUPS=(G1 G2 G3)
+[[ ${#GROUPS[@]} -eq 0 ]] && GROUPS=("${ALL_GROUPS[@]}")
 
 for g in "${GROUPS[@]}"; do
 case "$g" in
@@ -232,7 +233,8 @@ run G3_rri20_pK8_CBR95   0 100 20 20 2 23 0.8 2
 run G3_rri20_pK8_CBR95   0 100 20 20 2 23 0.8 3
 ;;
 
-*) echo "unknown group: $g (use G1 G2 G3)" ;;
+*) 
+;;
 esac
 done
 
