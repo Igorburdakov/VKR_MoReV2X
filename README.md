@@ -11,7 +11,9 @@
 ```
 morev2x/                              # исходный код MoReV2X/ns-3
 assets/highway_oval_80ue_dense/       # SUMO-карта и готовый ns-2 trace на 100 секунд
-experiments/run_experiments_final.sh  # итоговый запуск G1, G2, G3
+experiments/run_experiments_final.sh  # итоговый запуск G1, G2, G3 (по группам)
+experiments/run_all.sh                # простой линейный запуск всех симуляций
+experiments/run_experiments_old.sh    # старая версия скрипта
 EXPERIMENTS.md                        # описание набора экспериментов
 ```
 
@@ -40,25 +42,29 @@ sudo apt install build-essential python3 python3-dev libboost-all-dev
 ./waf --run "HIGHWAY_fcd --help"
 ```
 
-## Запуск всех экспериментов
+## Запуск экспериментов
 
-Из корня репозитория:
+Есть два варианта.
 
-```bash
-bash experiments/run_experiments_final.sh
-```
-
-Скрипт запускает 162 симуляции последовательно: G1 (нумерология), G2 (мощность сигнала) и G3 (RRI отдельно). Результаты сохраняются в:
-
-```
-morev2x/results/final_<дата_время>/<метка>/run<N>/
-```
-
-Можно запускать отдельные группы:
+Вариант 1 - простой линейный запуск всех симуляций:
 
 ```bash
-bash experiments/run_experiments_final.sh G1
-bash experiments/run_experiments_final.sh G2 G3
+bash experiments/run_all.sh
+```
+
+Вариант 2 - запуск по группам:
+
+```bash
+bash experiments/run_experiments_final.sh        # все группы
+bash experiments/run_experiments_final.sh G1     # только G1
+bash experiments/run_experiments_final.sh G2 G3  # G2 и G3
+```
+
+Результаты сохраняются в:
+
+```
+morev2x/results/final_<дата_время>/<метка>/run<N>/   # run_experiments_final.sh
+morev2x/results/all_<дата_время>/<метка>/run<N>/     # run_all.sh
 ```
 
 ## Как добавить новый эксперимент
@@ -85,29 +91,23 @@ run my_experiment  1 50 50 50 1 20 0.4 1
 6. `harq` - число передач на один диапазон RRI: 1 или 2 (использовал для корректировки объема сетевого трафика).
 7. `tx` - мощность передачи в dBm.
 8. `pkeep` - вероятность сохранить ресурс: 0.0, 0.4 или 0.8.
-9. `seed` - номер запуска `runNo`, обычно 1, 2 или 3 (необходим чтобы отличать разные симуляции с одной конфигурацией).
+9. `seed` - номер запуска `runNo`, обычно 1, 2 или 3 (необходим чтобы отличать разные симуляции где одна конфигурация).
 
-Чтобы добавить отдельную группу, нужно добавить новый блок в case:
+Чтобы добавить отдельную группу, достаточно определить функцию с префиксом `group_`:
 
-```
-my_group)
+```bash
+group_my_group() {
 echo "=== my_group ==="
 run my_experiment_seed1  1 50 50 50 1 20 0.4 1
 run my_experiment_seed2  1 50 50 50 1 20 0.4 2
 run my_experiment_seed3  1 50 50 50 1 20 0.4 3
-;;
+}
 ```
 
-Затем необходимо добавить в самом скрипте (в самом начале) в переменную с наименованиями всех групп для запуска, название своей группы
-
-```
-ALL_GROUPS=(G1 G2 G3, ..., my_group)
-```
-
-Запуск отдельно новой группы:
+Группа обнаруживается автоматически. Запуск:
 
 ```bash
-bash experiments/run_experiments_final.sh group
+bash experiments/run_experiments_final.sh my_group
 ```
 
 Запуск всех групп:

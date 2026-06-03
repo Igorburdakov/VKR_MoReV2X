@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-ALL_GROUPS=(G1 G2 G3)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 MOREV2X_DIR="${REPO_DIR}/morev2x"
@@ -15,7 +14,7 @@ TX_POWER=23
 SAVING_PERIOD=1.0
 SIM_TIME=100
 
-RESULTS_BASE="${MOREV2X_DIR}/results/final_$(date +%Y%m%d_%H%M%S)"
+RESULTS_BASE="${MOREV2X_DIR}/results/all_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "${RESULTS_BASE}"
 
 cd "${MOREV2X_DIR}"
@@ -44,7 +43,7 @@ run() {
         > "${out}/log.txt" 2>&1
 }
 
-group_G1() {
+echo "Results in ${RESULTS_BASE}"
 echo "=== G1: numerology * pKeep * CBR ==="
 run G1_mu0_pK0_CBR50  0 100 100 135 1 23 0.0 1
 run G1_mu0_pK0_CBR50  0 100 100 135 1 23 0.0 2
@@ -100,9 +99,7 @@ run G1_mu2_pK8_CBR50  2 20 25 34 1 23 0.8 3
 run G1_mu2_pK8_CBR95  2 20 25 25 2 23 0.8 1
 run G1_mu2_pK8_CBR95  2 20 25 25 2 23 0.8 2
 run G1_mu2_pK8_CBR95  2 20 25 25 2 23 0.8 3
-}
 
-group_G2() {
 echo "=== G2: txPower * pKeep * CBR (mu=0) ==="
 run G2_tx17_pK0_CBR50  0 100 100 135 1 17 0.0 1
 run G2_tx17_pK0_CBR50  0 100 100 135 1 17 0.0 2
@@ -158,9 +155,7 @@ run G2_tx23_pK8_CBR50  0 100 100 135 1 23 0.8 3
 run G2_tx23_pK8_CBR95  0 100 100 100 2 23 0.8 1
 run G2_tx23_pK8_CBR95  0 100 100 100 2 23 0.8 2
 run G2_tx23_pK8_CBR95  0 100 100 100 2 23 0.8 3
-}
 
-group_G3() {
 echo "=== G3: RRI * pKeep * CBR (mu=0) ==="
 run G3_rri100_pK0_CBR50  0 100 100 135 1 23 0.0 1
 run G3_rri100_pK0_CBR50  0 100 100 135 1 23 0.0 2
@@ -216,25 +211,5 @@ run G3_rri20_pK8_CBR50   0 100 20 27 1 23 0.8 3
 run G3_rri20_pK8_CBR95   0 100 20 20 2 23 0.8 1
 run G3_rri20_pK8_CBR95   0 100 20 20 2 23 0.8 2
 run G3_rri20_pK8_CBR95   0 100 20 20 2 23 0.8 3
-}
 
-all_groups() {
-    declare -F | awk '{print $3}' | grep '^group_' | sed 's/^group_//'
-}
-
-if [[ $# -eq 0 ]]; then
-    echo "No groups specified, running all: $(all_groups | tr '\n' ' ')"
-    for g in $(all_groups); do
-        "group_${g}"
-    done
-else
-    for g in "$@"; do
-        if declare -F "group_${g}" > /dev/null 2>&1; then
-            "group_${g}"
-        else
-            echo "unknown group: $g (available: $(all_groups | tr '\n' ' '))" >&2
-        fi
-    done
-fi
-
-echo "Final results in ${RESULTS_BASE}"
+echo "DONE. Results in ${RESULTS_BASE}"
