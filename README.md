@@ -91,11 +91,17 @@ run my_experiment  1 50 50 50 1 20 0.4 1
 
 ```
 my_group)
-echo "=== group ==="
+echo "=== my_group ==="
 run my_experiment_seed1  1 50 50 50 1 20 0.4 1
 run my_experiment_seed2  1 50 50 50 1 20 0.4 2
 run my_experiment_seed3  1 50 50 50 1 20 0.4 3
 ;;
+```
+
+Затем необходимо добавить в самом скрипте в переменную с наименованиями всех групп для запуска, название своей группы
+
+```
+ALL_GROUPS=(G1 G2 G3, ..., my_group)
 ```
 
 Запуск новой группы:
