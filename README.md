@@ -1,4 +1,4 @@
-# morev2x-highway-hpc
+# morev2x-highway
 
 Репозиторий для запуска серии экспериментов NR-V2X Mode 2 в highway сценарии. В качестве основы использовал MoReV2X/ns-3 и мобильность из подготовленного SUMO trace для 80 автомобилей.
 
@@ -108,6 +108,12 @@ run my_experiment_seed3  1 50 50 50 1 20 0.4 3
 
 ```bash
 bash experiments/run_experiments_final.sh my_group
+```
+
+Запуск всех групп:
+
+```bash
+bash experiments/run_experiments_final.sh
 ```
 
 ## Описание экспериментов
