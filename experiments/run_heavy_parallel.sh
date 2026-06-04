@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
-# Параллельный запуск самых тяжёлых конфигураций (G1 mu=2, G3 RRI=20).
-# Эти конфигурации генерируют максимальное число событий и считаются
-# в 5-20× дольше обычных (mu=0, RRI=100).
-#
-# Использование:
-#   bash experiments/run_heavy_parallel.sh          # по умолчанию 4 параллельных
-#   bash experiments/run_heavy_parallel.sh 8        # 8 параллельных процессов
-#   SEEDS="1 2 3" bash experiments/run_heavy_parallel.sh 6
-
 set -euo pipefail
 
 MAX_PARALLEL="${1:-4}"
@@ -30,7 +21,6 @@ mkdir -p "${RESULTS_BASE}"
 cd "${MOREV2X_DIR}"
 RUNNING=0
 
-# Семафор: ждать если уже MAX_PARALLEL процессов запущено
 throttle() {
     while (( RUNNING >= MAX_PARALLEL )); do
         wait -n 2>/dev/null || true
@@ -74,7 +64,6 @@ echo "Seeds: ${SEEDS}"
 echo "Results: ${RESULTS_BASE}"
 echo ""
 
-# --- G1 mu=2: numerology=2, SubChannel=20, RRI=25, все seeds ---
 echo "=== G1 mu=2 (numerology=2, harq=1/2) ==="
 for s in ${SEEDS}; do
     run_parallel G1_mu2_pK0_CBR50  2 20 25 34 1 23 0.0 "${s}"
@@ -85,7 +74,6 @@ for s in ${SEEDS}; do
     run_parallel G1_mu2_pK8_CBR95  2 20 25 25 2 23 0.8 "${s}"
 done
 
-# --- G3 RRI=20: самый частый интервал передачи ---
 echo "=== G3 RRI=20 (mu=0, SubChannel=100, RRI=20ms) ==="
 for s in ${SEEDS}; do
     run_parallel G3_rri20_pK0_CBR50  0 100 20 27 1 23 0.0 "${s}"
@@ -96,7 +84,6 @@ for s in ${SEEDS}; do
     run_parallel G3_rri20_pK8_CBR95  0 100 20 20 2 23 0.8 "${s}"
 done
 
-# --- G1 mu=1 CBR95: средне-тяжёлые ---
 echo "=== G1 mu=1 CBR95 (numerology=1, harq=2) ==="
 for s in ${SEEDS}; do
     run_parallel G1_mu1_pK0_CBR95  1 50 50 50 2 23 0.0 "${s}"
@@ -104,7 +91,6 @@ for s in ${SEEDS}; do
     run_parallel G1_mu1_pK8_CBR95  1 50 50 50 2 23 0.8 "${s}"
 done
 
-# --- G3 RRI=50: средне-тяжёлые ---
 echo "=== G3 RRI=50 (mu=0, RRI=50ms) ==="
 for s in ${SEEDS}; do
     run_parallel G3_rri50_pK0_CBR95  0 100 50 50 2 23 0.0 "${s}"
