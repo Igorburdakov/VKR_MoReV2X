@@ -60,6 +60,12 @@ bash experiments/run_experiments_final.sh G1     # только G1
 bash experiments/run_experiments_final.sh G2 G3  # G2 и G3
 ```
 
+Вариант 3 - запуск в параллели самых тяжелых сценариев:
+
+```bash
+bash experiments/run_heavy_parallel.sh 8 -- где 8 количество параллельных процессов, которые должны запуститься
+```
+
 Результаты сохраняются в:
 
 ```
