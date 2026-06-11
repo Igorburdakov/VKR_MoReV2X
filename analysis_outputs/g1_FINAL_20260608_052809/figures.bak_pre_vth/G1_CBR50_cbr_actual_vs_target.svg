@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536" height="540" viewBox="0 0 536 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="268.0" y="28" text-anchor="middle" font-family="Arial" font-size="20">Actual measured CBR vs target</text>
+<text x="268.0" y="50" text-anchor="middle" font-family="Arial" font-size="13" fill="#555">CBR target=50%, group=G1</text>
+<line x1="70" y1="80" x2="70" y2="430" stroke="#333"/>
+<line x1="70" y1="430" x2="376" y2="430" stroke="#333"/>
+<line x1="65" y1="430.0" x2="70" y2="430.0" stroke="#333"/>
+<text x="62" y="434.0" text-anchor="end" font-family="Arial" font-size="11">0.0</text>
+<line x1="65" y1="360.0" x2="70" y2="360.0" stroke="#333"/>
+<text x="62" y="364.0" text-anchor="end" font-family="Arial" font-size="11">0.2</text>
+<line x1="65" y1="290.0" x2="70" y2="290.0" stroke="#333"/>
+<text x="62" y="294.0" text-anchor="end" font-family="Arial" font-size="11">0.4</text>
+<line x1="65" y1="220.0" x2="70" y2="220.0" stroke="#333"/>
+<text x="62" y="224.0" text-anchor="end" font-family="Arial" font-size="11">0.6</text>
+<line x1="65" y1="150.0" x2="70" y2="150.0" stroke="#333"/>
+<text x="62" y="154.0" text-anchor="end" font-family="Arial" font-size="11">0.8</text>
+<line x1="65" y1="80.0" x2="70" y2="80.0" stroke="#333"/>
+<text x="62" y="84.0" text-anchor="end" font-family="Arial" font-size="11">1.0</text>
+<line x1="70" y1="255.0" x2="376" y2="255.0" stroke="#c62828" stroke-dasharray="5,3" stroke-width="1.5"/>
+<text x="74" y="251.0" font-family="Arial" font-size="11" fill="#c62828">target=0.50</text>
+<text transform="translate(20,255.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="14">CBR (measured fraction)</text>
+<rect x="72.0" y="265.5" width="28" height="164.5" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="86.0" y1="244.5" x2="86.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="81.0" y1="244.5" x2="91.0" y2="244.5" stroke="#333" stroke-width="1.2"/>
+<line x1="70.0" y1="265.0" x2="102.0" y2="265.0" stroke="#ff7f0e" stroke-width="2"/>
+<text x="86.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="86.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="106.0" y="258.5" width="28" height="171.5" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="120.0" y1="234.0" x2="120.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="115.0" y1="234.0" x2="125.0" y2="234.0" stroke="#333" stroke-width="1.2"/>
+<line x1="104.0" y1="257.6" x2="136.0" y2="257.6" stroke="#ff7f0e" stroke-width="2"/>
+<text x="120.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="120.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="140.0" y="255.0" width="28" height="175.0" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="154.0" y1="234.0" x2="154.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="149.0" y1="234.0" x2="159.0" y2="234.0" stroke="#333" stroke-width="1.2"/>
+<line x1="138.0" y1="254.9" x2="170.0" y2="254.9" stroke="#ff7f0e" stroke-width="2"/>
+<text x="154.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="154.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="174.0" y="262.0" width="28" height="168.0" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="188.0" y1="249.8" x2="188.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="183.0" y1="249.8" x2="193.0" y2="249.8" stroke="#333" stroke-width="1.2"/>
+<line x1="172.0" y1="262.5" x2="204.0" y2="262.5" stroke="#ff7f0e" stroke-width="2"/>
+<text x="188.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="188.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="208.0" y="253.2" width="28" height="176.8" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="222.0" y1="241.0" x2="222.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="217.0" y1="241.0" x2="227.0" y2="241.0" stroke="#333" stroke-width="1.2"/>
+<line x1="206.0" y1="253.8" x2="238.0" y2="253.8" stroke="#ff7f0e" stroke-width="2"/>
+<text x="222.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="222.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="242.0" y="253.2" width="28" height="176.8" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="256.0" y1="241.0" x2="256.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="251.0" y1="241.0" x2="261.0" y2="241.0" stroke="#333" stroke-width="1.2"/>
+<line x1="240.0" y1="254.1" x2="272.0" y2="254.1" stroke="#ff7f0e" stroke-width="2"/>
+<text x="256.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="256.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="276.0" y="264.6" width="28" height="165.4" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="290.0" y1="256.8" x2="290.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="285.0" y1="256.8" x2="295.0" y2="256.8" stroke="#333" stroke-width="1.2"/>
+<line x1="274.0" y1="264.4" x2="306.0" y2="264.4" stroke="#ff7f0e" stroke-width="2"/>
+<text x="290.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="290.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="310.0" y="255.9" width="28" height="174.1" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="324.0" y1="245.4" x2="324.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="319.0" y1="245.4" x2="329.0" y2="245.4" stroke="#333" stroke-width="1.2"/>
+<line x1="308.0" y1="256.0" x2="340.0" y2="256.0" stroke="#ff7f0e" stroke-width="2"/>
+<text x="324.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="324.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="344.0" y="254.1" width="28" height="175.9" fill="#1f77b4" fill-opacity="0.75"/>
+<line x1="358.0" y1="245.4" x2="358.0" y2="430.0" stroke="#333" stroke-width="0.8"/>
+<line x1="353.0" y1="245.4" x2="363.0" y2="245.4" stroke="#333" stroke-width="1.2"/>
+<line x1="342.0" y1="253.8" x2="374.0" y2="253.8" stroke="#ff7f0e" stroke-width="2"/>
+<text x="358.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="358.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="396" y="90" width="16" height="16" fill="#1f77b4" fill-opacity="0.75"/>
+<text x="418" y="103" font-family="Arial" font-size="12">CBR p50 (bar)</text>
+<rect x="396" y="112" width="16" height="16" fill="#333" fill-opacity="0.75"/>
+<text x="418" y="125" font-family="Arial" font-size="12">CBR p95 (whisker top)</text>
+<rect x="396" y="134" width="16" height="16" fill="#ff7f0e" fill-opacity="0.75"/>
+<text x="418" y="147" font-family="Arial" font-size="12">CBR mean (orange tick)</text>
+<rect x="396" y="156" width="16" height="16" fill="#c62828" fill-opacity="0.75"/>
+<text x="418" y="169" font-family="Arial" font-size="12">target (red dashed)</text>
+</svg>

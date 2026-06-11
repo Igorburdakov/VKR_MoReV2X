@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="536" height="540" viewBox="0 0 536 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="268.0" y="28" text-anchor="middle" font-family="Arial" font-size="20">Loss decomposition (stacked)</text>
+<text x="268.0" y="50" text-anchor="middle" font-family="Arial" font-size="13" fill="#555">CBR target=50%, band=250_500m, group=G1</text>
+<line x1="70" y1="70" x2="70" y2="430" stroke="#333"/>
+<line x1="70" y1="430" x2="376" y2="430" stroke="#333"/>
+<line x1="65" y1="430.0" x2="70" y2="430.0" stroke="#333"/>
+<text x="62" y="434.0" text-anchor="end" font-family="Arial" font-size="11">0.0</text>
+<line x1="65" y1="358.0" x2="70" y2="358.0" stroke="#333"/>
+<text x="62" y="362.0" text-anchor="end" font-family="Arial" font-size="11">0.2</text>
+<line x1="65" y1="286.0" x2="70" y2="286.0" stroke="#333"/>
+<text x="62" y="290.0" text-anchor="end" font-family="Arial" font-size="11">0.4</text>
+<line x1="65" y1="214.0" x2="70" y2="214.0" stroke="#333"/>
+<text x="62" y="218.0" text-anchor="end" font-family="Arial" font-size="11">0.6</text>
+<line x1="65" y1="142.0" x2="70" y2="142.0" stroke="#333"/>
+<text x="62" y="146.0" text-anchor="end" font-family="Arial" font-size="11">0.8</text>
+<line x1="65" y1="70.0" x2="70" y2="70.0" stroke="#333"/>
+<text x="62" y="74.0" text-anchor="end" font-family="Arial" font-size="11">1.0</text>
+<text transform="translate(20,250.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="14">fraction of TX attempts</text>
+<rect x="72.0" y="79.4" width="28" height="350.56" fill="#2ca02c"/>
+<rect x="72.0" y="77.5" width="28" height="1.92" fill="#ff7f0e"/>
+<rect x="72.0" y="77.5" width="28" height="0.00" fill="#9467bd"/>
+<rect x="72.0" y="71.4" width="28" height="6.07" fill="#d62728"/>
+<rect x="72.0" y="70.0" width="28" height="1.44" fill="#1f77b4"/>
+<text x="86.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="86.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="106.0" y="78.7" width="28" height="351.29" fill="#2ca02c"/>
+<rect x="106.0" y="77.3" width="28" height="1.37" fill="#ff7f0e"/>
+<rect x="106.0" y="77.3" width="28" height="0.00" fill="#9467bd"/>
+<rect x="106.0" y="71.2" width="28" height="6.17" fill="#d62728"/>
+<rect x="106.0" y="70.0" width="28" height="1.17" fill="#1f77b4"/>
+<text x="120.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="120.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="140.0" y="78.4" width="28" height="351.56" fill="#2ca02c"/>
+<rect x="140.0" y="77.1" width="28" height="1.33" fill="#ff7f0e"/>
+<rect x="140.0" y="77.1" width="28" height="0.00" fill="#9467bd"/>
+<rect x="140.0" y="71.0" width="28" height="6.07" fill="#d62728"/>
+<rect x="140.0" y="70.0" width="28" height="1.04" fill="#1f77b4"/>
+<text x="154.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu0</text>
+<text x="154.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="174.0" y="77.9" width="28" height="352.06" fill="#2ca02c"/>
+<rect x="174.0" y="76.1" width="28" height="1.81" fill="#ff7f0e"/>
+<rect x="174.0" y="76.1" width="28" height="0.00" fill="#9467bd"/>
+<rect x="174.0" y="70.0" width="28" height="6.13" fill="#d62728"/>
+<rect x="174.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="188.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="188.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="208.0" y="77.2" width="28" height="352.77" fill="#2ca02c"/>
+<rect x="208.0" y="76.1" width="28" height="1.14" fill="#ff7f0e"/>
+<rect x="208.0" y="76.1" width="28" height="0.00" fill="#9467bd"/>
+<rect x="208.0" y="70.0" width="28" height="6.09" fill="#d62728"/>
+<rect x="208.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="222.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="222.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="242.0" y="77.4" width="28" height="352.60" fill="#2ca02c"/>
+<rect x="242.0" y="76.1" width="28" height="1.30" fill="#ff7f0e"/>
+<rect x="242.0" y="76.1" width="28" height="0.00" fill="#9467bd"/>
+<rect x="242.0" y="70.0" width="28" height="6.10" fill="#d62728"/>
+<rect x="242.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="256.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu1</text>
+<text x="256.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="276.0" y="76.0" width="28" height="353.96" fill="#2ca02c"/>
+<rect x="276.0" y="74.2" width="28" height="1.79" fill="#ff7f0e"/>
+<rect x="276.0" y="74.2" width="28" height="0.00" fill="#9467bd"/>
+<rect x="276.0" y="70.0" width="28" height="4.24" fill="#d62728"/>
+<rect x="276.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="290.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="290.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.00</text>
+<rect x="310.0" y="75.5" width="28" height="354.55" fill="#2ca02c"/>
+<rect x="310.0" y="74.3" width="28" height="1.17" fill="#ff7f0e"/>
+<rect x="310.0" y="74.3" width="28" height="0.00" fill="#9467bd"/>
+<rect x="310.0" y="70.0" width="28" height="4.28" fill="#d62728"/>
+<rect x="310.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="324.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="324.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.40</text>
+<rect x="344.0" y="75.4" width="28" height="354.59" fill="#2ca02c"/>
+<rect x="344.0" y="74.3" width="28" height="1.16" fill="#ff7f0e"/>
+<rect x="344.0" y="74.3" width="28" height="0.00" fill="#9467bd"/>
+<rect x="344.0" y="70.0" width="28" height="4.26" fill="#d62728"/>
+<rect x="344.0" y="70.0" width="28" height="0.00" fill="#1f77b4"/>
+<text x="358.0" y="448" text-anchor="middle" font-family="Arial" font-size="10">mu2</text>
+<text x="358.0" y="462" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">P=0.80</text>
+<rect x="396" y="80" width="16" height="16" fill="#2ca02c"/>
+<text x="418" y="93" font-family="Arial" font-size="12">success</text>
+<rect x="396" y="102" width="16" height="16" fill="#ff7f0e"/>
+<text x="418" y="115" font-family="Arial" font-size="12">HDR</text>
+<rect x="396" y="124" width="16" height="16" fill="#9467bd"/>
+<text x="418" y="137" font-family="Arial" font-size="12">NSR</text>
+<rect x="396" y="146" width="16" height="16" fill="#d62728"/>
+<text x="418" y="159" font-family="Arial" font-size="12">PLR</text>
+<rect x="396" y="168" width="16" height="16" fill="#1f77b4"/>
+<text x="418" y="181" font-family="Arial" font-size="12">CLR</text>
+</svg>
